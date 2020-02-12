@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+	
+	<Resource name="jdbc/mm" 
+	auth="Container" 
+	type="javax.sql.DataSource"
+          username="bihf"
+          password="bihf0119"
+          driver="com.mysql.cj.jdbc.Driver"
+          driverClassName="com.mysql.cj.jdbc.Driver"
+          url="jdbc:mysql://bihf2.c7bp8tticjxg.ap-northeast-2.rds.amazonaws.com:3306/bihf?serverTimezone=UTC"
+          maxTotal="25"
+          maxIdle="10"
+          validationQuery="select 1"
+	
+	/>
+	
+</Context>
+
+
+
+
+
