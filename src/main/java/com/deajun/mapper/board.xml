@@ -8,7 +8,20 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		select count(*)
 		from board;
 	</select>
-
+	
+	<select id="findAllList" resultType="Board">
+		select no, content, time
+		from board;
+	</select>
+	
+	<insert id="insertBoard" parameterType="Board"  useGeneratedKeys="true" keyProperty="no">
+		insert into board(no, content, time)
+		values(#{no}, #{content}, now());	
+	</insert>
+	<delete id="deleteBoard" parameterType="double">
+		delete from board
+		where no = #{no}
+	</delete>
 
 
 </mapper>
